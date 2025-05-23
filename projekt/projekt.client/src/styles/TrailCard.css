@@ -1,0 +1,25 @@
+
+.trails {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trail {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.trail:hover {
+    transform: scale(1.02);
+    background-color: yellow;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
