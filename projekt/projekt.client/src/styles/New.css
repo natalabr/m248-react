@@ -1,78 +1,129 @@
 #mainNew {
-    height: 81vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 #newContainer {
-    border: 1px solid #ce1c1c;
-    border-radius: 5px;
-    width: 90%;
-    box-sizing: border-box;
+    background-color: var(--background-trail-color);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    width: 80%;
+    padding: 20px;
 }
 
 .form-title {
-    font-size: 1.8em;
-    font-weight: bold;
     text-align: center;
-    margin-bottom: 30px; /* More space below title */
+    margin-bottom: 30px;
 }
 
 .form-group {
     display: flex;
     align-items: center;
-    margin-bottom: 20px; /* Space between form groups */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .form-group label {
-    flex: 0 0 100px; /* Fixed width for labels */
-    color: #555;
-    font-size: 1.1em;
-    text-align: right; /* Align label text to the right */
-    margin-right: 15px; /* Space between label and input */
+    flex: 0 0 100px;
+    text-align: left;
 }
 
 .form-group input {
-    flex-grow: 1; /* Input takes remaining space */
-    padding: 12px; /* Larger padding for inputs */
-    border: 1px solid #ddd;
-    border-radius: 8px; /* Rounded input fields */
-    font-size: 1em;
-    outline: none; /* Remove default outline */
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.form-group input:focus {
-    border-color: #a0a0a0; /* Darker border on focus */
-    box-shadow: 0 0 0 3px rgba(160, 160, 160, 0.2); /* Subtle shadow on focus */
-}
-
-.button-container {
-    display: flex;
-    justify-content: flex-end; /* Align button to the right */
-    margin-top: 30px; /* Space above the button */
-}
-
-.create-button {
-    background: linear-gradient(to bottom, #d4d4d4, #a0a0a0); /* Gradient for button */
-    color: #333;
-    padding: 12px 25px; /* Larger padding for button */
-    border: 1px solid #888;
+    background-color: var(--primary-color);
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background 0.2s ease, box-shadow 0.2s ease;
-}
-
-.create-button:hover {
-    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); /* Lighter gradient on hover */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    outline: none;
 }
 
 .form-input {
     cursor: pointer;
+}
+
+.form-group input:focus {
+    border-color: var(--border-color);
+    box-shadow: 0 0 0 3px var(--dark-shadow-color);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.form-buttons button {
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 0 0 100px;
+}
+
+div.field-required {
+    color: var(--border-red-button-color);
+    text-align: end;
+    align-self: end;
+    flex-basis: 100%;
+    font-size: small;
+    padding-top: 5px;
+}
+
+#cancelButton {
+    background-color: var(--red-button-color);
+    border-color: var(--border-red-button-color);
+}
+
+#createButton {
+    background-color: var(--green-button-color);
+    border-color: var(--border-green-button-color);
+}
+
+.create-button:hover {
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    #mainNew {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #newContainer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .form-group label {
+        flex: 1;
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-group input {
+        flex: 1;
+        width: 100%;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-buttons button {
+        flex: 1;
+    }
+
+    div.field-required {
+        align-self: end;
+        font-size: inherit;
+    }
 }

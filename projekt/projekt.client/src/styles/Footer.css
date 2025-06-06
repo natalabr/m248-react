@@ -1,10 +1,12 @@
 footer {
+    margin-top: 20px;
     background-color: var(--secondary-color);
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
+    width: 100%;
 }
 
 footer p {

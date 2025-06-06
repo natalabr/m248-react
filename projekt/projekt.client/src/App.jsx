@@ -8,7 +8,6 @@ import React from "react";
 export const LOCALSTORAGE_KEY = "trails";
 
 export default function App() {
-    //TODO: add route for /impressum
     return (
         <BrowserRouter>
             <Routes>

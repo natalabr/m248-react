@@ -6,6 +6,7 @@
     background-color: var(--secondary-color);
     padding: 6px 10%;
     color: var(--primary-color);
+    top: 0;
 }
 
 header nav img {
@@ -23,4 +24,5 @@ a {
 a:hover {
     cursor: pointer;
     transform: scale(1.02);
+    color: var(--background-trail-color);
 }

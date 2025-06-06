@@ -1,8 +1,10 @@
 main {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: var(--primary-color);
+    color: black;
 }
 
 #headerContent {
@@ -10,15 +12,16 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 10% 0;
+    padding: 40px 10% 0;
 }
 
-.buttons {
-    display: flex;
-    height: fit-content;
-    gap: 10px;
-}
 
-button {
+#newButton {
+    padding: 8px;
+    border: 2px solid;
+    border-radius: 8px;
     cursor: pointer;
+    flex: 0 0 100px;
+    background-color: var(--green-button-color);
+    border-color: var(--border-green-button-color);
 }

@@ -1,26 +1,53 @@
 ﻿:root {
     --primary-color: #FEFAE0;
     --secondary-color: #457a52;
+    --background-trail-color: #e9dfc3;
+    --border-color: #bcb191;
+    --green-button-color: #B9CB74;
+    --border-green-button-color: #91A151;
+    --red-button-color: #EB7474;
+    --border-red-button-color: #C54C4C;
+    --light-schadow-color: #a0a0a0;
+    --dark-shadow-color: #A0A0A033;
+    --past-trail-color: #bab4a2;
+    --border-past-trail-color: #968d71;
+    --hover-past-trail-color: #cac1a8;
+    --hover-trail-color: #efe2c0;
+    --yellow-button-color: #fffc2a73;
+    --border-yellow-button-color: #b0a007;
 }
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column; 
-    min-height: 100vh; 
+    min-height: 100vh;
     min-width: 320px;
     place-items: normal;
     background-color: var(--primary-color);
+    height: 100%;
+}
+
+html {
+    height: 100%;
 }
 
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    color: black;
     margin: 0;
     padding: 0;
     cursor: default;
     scroll-behavior: smooth;
     scrollbar-track-color: white;
     scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
+button:hover, button:hover * {
+    cursor: pointer;
+}
+
+::selection {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }

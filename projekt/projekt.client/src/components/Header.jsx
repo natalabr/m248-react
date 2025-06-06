@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header>
             <nav className="nav-bar">
-                <img src="/src/images/logo.png" alt="RappiTours-Logo"/>
+                <img onClick={() => {location.href = "/"}} src="/src/images/logo.png" alt="RappiTours Logo"/>
                 <a href="/">RappiTours</a>
                 <a href="/">Home</a>
             </nav>
