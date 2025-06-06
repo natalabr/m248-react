@@ -1,6 +1,6 @@
 # projekt-248-natalia-learta
 
-## How to run
+## Installation
 
 1. **Clone the repository**
     ```bash
@@ -9,7 +9,7 @@
     ```
 
 2. **Install Dependencies**
-
+s
     ```
     npm install 
     ```
@@ -18,3 +18,9 @@
     ```
     npm run dev
     ```
+
+## Technologies Used
+
+- [Vite](https://vite.dev)
+- [React](https://react.dev)
+- JavaScript
