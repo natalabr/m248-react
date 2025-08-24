@@ -1,4 +1,4 @@
-# projekt-248-natalia-learta
+# m248-react
 
 ## Installation
 
