@@ -4,8 +4,8 @@
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/bwz-imst23a/projekt-248-natalia-learta
-    cd ./projekt-248-natalia-learta/
+    git clone https://github.com/natalabr/m248-react.git
+    cd ./m248-react/
     ```
 
 2. **Install Dependencies**
