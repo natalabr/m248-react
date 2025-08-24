@@ -1,4 +1,6 @@
-# m248-react
+# RappiTours 
+
+The RappiTours web application was developed for tour guides to provide a platform with the management of their tours. The application enables users to create, edit and access planned routes.
 
 ## Installation
 
@@ -9,7 +11,6 @@
     ```
 
 2. **Install Dependencies**
-s
     ```
     npm install 
     ```
